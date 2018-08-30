@@ -1,0 +1,31 @@
+1. a)
+Las clases relevantes son empresa persona maquinaria y proyecto.
+
+Empresa contiene atributos:
+ nombre o ID
+ trabajadores que contiene una lista con los trabajadores del proyecto, estos son elementos de la clase trabajador.
+ maquinaria :idem que caso anterior
+ 
+ y metodos:
+  crear maquinaria, crear trabajador, asignar maquinaria (a proyecto) y asignar trabajador (a proyecto) 
+El resto se explica en el diagrama
+
+**No alcancé a poner metodos de los proyectos, pero obviamente son asignar maquinaria a cada trabajador. Por favor considerar para el desarrollo, eso queda claro en la parte b
+
+1. b 
+En la clase empresas con metodo asignar proyecto y maquinaria se asigna a cada proyecto los trabajadores y maquinaria correspondiente.
+Esa inforamcion es almacenada en los atributos del proyecto, luego, se revisan los trabajadores de la empresa inmobiliaria en cada proyecto de la siguiente forma:
+se itera sobre los trabajadores del proyecto, si el trabajador pertenece  a la empresa inmobiliara entonces se accede a la maquinaria que se le asignó, y si esta no está asociada 
+a la empresa (ya que cada máquina está asociada a una empresa en los atributos de la clase empresa), entonces se registra.
+Finalmente se suman los registros y se dividen por el total de trabajadores del proyecto (len(lista trabajadores dentro del proyecto))
+Y se itera para cada proyecto.
+
+2. a) La clase banco contiene listas con los clientes, tesoreros, ejecutivos y cajas (todos instancias de sus clases)
+El resto se explica en diagrama.
+
+2. b)
+
+En la clase banco se crea metodo llegada clientes y en ese instante se utiliza el metodo crear persona a medida que llegan. Si llegan antes de las 9 se almacenan en atributo fila principal.
+En el atributo lista_caja se almacenan las instancias de cajas(5 en esta caso) en ellas se tiene el atributo lista personas en caja en fila; con ello se revisan la cantidad de personas en fila en
+cada caja y se le asigna caja al cliente entre las cajas con menor fila a y luego se registra con el metodo de la clase caja asignar fila a cliente, almacenando asi la personas asignada.
+Cuando una persona es atendida se remueve de esta lista.
